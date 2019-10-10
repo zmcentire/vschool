@@ -1,0 +1,40 @@
+html {
+    background-color: grey;
+    margin: 90px;
+}
+
+body {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+.answer {
+    background-color: darkslategray;
+    height: 85px;
+    width: 650px;
+    position: relative;
+    left: 275px;
+    bottom: 20px;
+}
+
+input {
+    background-color: chartreuse;
+    font-size: large;
+    padding: 20px;
+}
+
+button {
+    background-color: darkslategray;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: large;
+}
+
+h3 {
+    font-size: 50px;
+}

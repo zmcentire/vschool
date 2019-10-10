@@ -16,6 +16,6 @@ myBox.addEventListener("dblclick", function(){
     this.style.backgroundColor = 'green'
 })
 
-myBox.addEventListener("wheel", function(){
-    this.style.backgroundColor = 'orange'
+window.addEventListener("wheel", function(){
+    myBox.style.backgroundColor = 'orange'
 })

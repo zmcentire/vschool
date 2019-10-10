@@ -1,32 +1,55 @@
+body {
+    margin: 5px,5px,5px,5px;
+}
+
 .content {
     background-color: #f5c6d6;
     font-size: 0px;
     padding: 80px;
     box-sizing: border-box;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 80%;
+    width: 100%;
+    border: 5px white solid;
+    position: relative;
 }
+
+
 
 .more-content span {
     background-color: #ee2e84;
     box-sizing: border-box;
     font-size: 0px;
     padding: 80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     display: inline-block;
-    width:20%;
+    width:24.75%;
+    border: 5px white solid;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .more-content span{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .even-more-content span {
     background-color: #85cfd8;
     box-sizing: border-box;
     padding: 100px;
-    width: 40%;
+    width: 49.75%;
     font-size: 0px;
-    margin-bottom: 10px;
     display: inline-block;
+    border: 5px white solid;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .even-more-content span {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .cahntent .green {
@@ -36,7 +59,17 @@
     padding: 80px;
     margin-bottom: 10px;
     display: inline-block;
-    width: 65%;
+    width: 74.75%;
+    border: 5px white solid;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .cahntent .green {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .cahntent .orange {
@@ -45,5 +78,15 @@
     box-sizing: border-box;
     padding: 80px;
     display: inline-block;
-    width:15%;
+    width:24.75%;
+    border: 5px white solid;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .cahntent .orange {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
