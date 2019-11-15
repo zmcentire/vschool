@@ -1,0 +1,51 @@
+{
+    "appetizers":[
+        {
+            "name":"French Fries",
+            "ingredients":["Potatoes", "Olive Oil"],
+            "description": "Fried potatoes"
+        },
+        {
+            "name":"Parfait",
+            "ingredients":["Yogurt", "Fruit"],
+            "description":"Breakfast yogurt with fruit"
+        }
+    ],
+    "coldSandwiches":[
+        {
+            "name":"Turkey",
+            "ingredients":["bread","sliced turkey breast"],
+            "description":"Sliced turkey breast with bread,vegetables and condiments of your choice"
+        },
+        {
+            "name":"BLT",
+            "ingredients":["Bacon", "Lettuce", "Tomato"],
+            "description":"Bacon,Lettuce,Tomato with bread,vegetables and condiments of your choice"
+        }
+    ],
+    "hotSandwiches":[
+        {
+            "name":"Meatball Sub",
+            "ingedrients":["Meatballs","Marinara Sauce","Mozzarella"],
+            "description":"Cooked meatballs with sliced mozzarella on bread,vegetables and condiments of your choice"
+        },
+        {
+            "name":"Crunchwrap Supreme",
+            "ingedrients":["tortilla","ground beef", "tomatoes","lettuce","cheese","sauce"],
+            "description":"Like Taco Bell"
+        }
+    ],
+    "desserts":[
+        {
+            "name":"Ice Cream Cone",
+            "indgredients":["Ice Cream","Waffle Cone"],
+            "description":"Vanilla, chocolate or mixed"
+        },
+        {
+            "name":"Cookie",
+            "indgredients":["Cookies"],
+            "description":"Your choice of Chocolate Chip, White Chocolate, or Oatmeal"
+        }
+    ],
+    "drinks":["Water", "Soft drinks"]
+}

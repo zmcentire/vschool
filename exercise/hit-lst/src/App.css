@@ -1,0 +1,32 @@
+.app {
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.HitList {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: silver;
+}
+
+.HitList img {
+    height: 200px;
+    width: 200px;
+}
+
+.header {
+    display: flex;
+    background-color: gray;
+}
+
+.header img {
+    width: 100px;
+}
+.header h3 {
+    color: maroon;
+    justify-self: center;
+    position: relative;
+    left: 30px;
+    align-self: center;
+}

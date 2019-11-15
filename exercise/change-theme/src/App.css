@@ -1,0 +1,64 @@
+body > #root > div {
+    height: 100vh;
+    margin: 0%;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 100%;
+}
+
+.light .navbar {
+    background-color: lightblue;
+}
+
+.light .footer {
+    background-color: grey;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 100%;
+}
+
+.dark .navbar {
+    border: 1px white solid;
+}
+
+.dark .footer {
+    border: 1px white solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px black solid;
+    padding: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    position: absolute;
+    padding: 10px;
+}

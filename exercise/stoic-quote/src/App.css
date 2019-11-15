@@ -1,0 +1,30 @@
+body > #root > div {
+    height: 100vh;
+    margin: 0%;
+    background-color: lightblue;
+}
+
+.app {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    background-color: lightgrey;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px black solid;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.quote-container {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    border: black 2px solid;
+    margin-top: 10px;
+    width: 35%;
+    position: relative;
+    left: 400px;
+}

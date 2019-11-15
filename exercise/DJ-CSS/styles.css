@@ -1,0 +1,56 @@
+html, body {
+    margin: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    grid-column-gap: 5px;
+}
+
+.container div {
+    height: 300px;
+    width: 95%;
+    border: 3px black solid;
+    transition-property: all;
+    transition-duration: .25s;
+}
+
+.div1:hover {
+    background-color: darkcyan;
+    border: 5px whitesmoke dotted;
+}
+
+.div2:hover {
+    background-color: deeppink;
+    border: 10px silver groove;
+    margin: 10px;
+    height: 250px;
+    width: 80%;
+    box-shadow: 10px 10px 5px 5px #999;
+}
+
+.div3:hover {
+    background-color: limegreen;
+    border: 5px azure dashed;
+    border-radius: 10%;
+
+}
+
+.div4:hover {
+    background-color: mediumslateblue;
+    border: 5px hidden;
+    border-radius: 50%;
+}
+
+.div5:hover {
+    background-color: teal;
+    border: 10px goldenrod double;
+}
+
+.div6:hover {
+    background-color: greenyellow;
+    border: 8px darksalmon inset;
+}

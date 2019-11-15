@@ -1,0 +1,50 @@
+html {
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+body {
+    display: grid;
+    grid-auto-rows: 6;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 80px;
+    font-size: 50px;
+}
+
+.Goomba img{
+    height: 300px;
+    width: 250px;
+    float: left;
+}
+
+.Bomb-ombs img {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.cheep-cheep img {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.caught {
+    margin: 100x;
+    padding: 25px;
+}
+
+.total {
+    height: 50px;
+    width: 600px;
+    font-size: 50px;
+    font-family: 'Arial Narrow Bold';
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}

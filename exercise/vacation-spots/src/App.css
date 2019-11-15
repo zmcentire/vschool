@@ -1,0 +1,35 @@
+.vacation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.vacation {
+    border: black 2px solid;
+    padding: 5px;
+}
+
+.spring {
+    background-color: cyan;
+    border: black 2px solid;
+    padding: 5px;
+}
+
+.winter {
+    background-color: snow;
+    border: black 2px solid;
+    padding: 5px;
+}
+
+.summer {
+    background-color: orangered;
+    border: black 2px solid;
+    padding: 5px;
+}
+
+.fall {
+    background-color: rosybrown;
+    border: black 2px solid;
+    padding: 5px
+}

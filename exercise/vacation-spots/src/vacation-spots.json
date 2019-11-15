@@ -1,0 +1,28 @@
+[
+    {
+      "place": "Meridian, Idaho",
+      "price": 40,
+      "timeToGo": "Spring",
+      "cost": "$"
+    },{
+      "place": "Cancun",
+      "price": 900,
+      "timeToGo": "Winter",
+      "cost": "$$"
+    },{
+      "place": "China",
+      "price": 1200,
+      "timeToGo": "Fall",
+      "cost": "$$$"
+    },{
+      "place": "Russia",
+      "price": 1100,
+      "timeToGo": "Summer",
+      "cost": "$$$"
+    },{
+      "place": "Lebanon",
+      "price": 400,
+      "timeToGo": "Spring",
+      "cost": "$$"
+    }
+]

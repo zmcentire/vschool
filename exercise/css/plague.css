@@ -1,0 +1,20 @@
+html {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+}
+
+.congrats h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 75px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    height: 300px;
+}

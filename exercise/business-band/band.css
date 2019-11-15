@@ -1,0 +1,86 @@
+html, body {
+    background-color: whitesmoke;
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 150px auto 150px;
+}
+
+.header {
+    display: grid;
+    background-color: rgb(10, 107, 107);
+    border: 2px black solid;
+    justify-content: center;
+    grid-template-rows: 88px;
+    align-content: center;
+}
+
+
+.header h1 {
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: black;
+}
+
+.nav {
+    justify-content: center;
+    text-align: center;
+}
+
+.header nav {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+}
+
+.content img {
+    display: flex;
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+.content script {
+    background-color: black;
+}
+
+.content iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px; 
+}
+
+article h2 {
+    font-size: 40px;
+    color: goldenrod;
+}
+
+article p {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.social h2 {
+    color: goldenrod;
+}
+
+.social .faceBook {
+    height: 50px;
+    width: 50px;
+}
+
+.social .twitter {
+    height: 50px;
+    width: 50px;
+}
+
+.social .instagram {
+    height: 50px;
+    width: 50px;
+}
