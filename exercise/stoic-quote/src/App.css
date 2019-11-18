@@ -6,8 +6,7 @@ body > #root > div {
 
 .app {
     display: grid;
-    grid-template-rows: 100px auto 100px;
-    background-color: lightgrey;
+    grid-template-rows: 100px auto;
 }
 
 .navbar {
@@ -18,6 +17,11 @@ body > #root > div {
     background-color: lightgrey;
 }
 
+.body {
+    display: flex;
+    justify-content: center;
+}
+
 .quote-container {
     justify-content: center;
     display: flex;
@@ -25,6 +29,31 @@ body > #root > div {
     border: black 2px solid;
     margin-top: 10px;
     width: 35%;
-    position: relative;
-    left: 400px;
+    /* position: relative;
+    left: 400px; */
+    background-color: whitesmoke;
+}
+
+.adversity {
+    background-color: lightblue;
+}
+
+.quoteAdversity {
+    border: black solid 2px;
+}
+
+.mental {
+    background-color: lightblue;
+}
+
+.quoteMental {
+    border: black solid 2px;
+}
+
+.mortality {
+    background-color: lightblue;
+}
+
+.quoteMortality {
+    border: black solid 2px;
 }

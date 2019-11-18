@@ -1,20 +1,16 @@
-import React, {Component} from 'react';
-import {withProvider} from './QuoteProvider'
+import React from 'react';
 
-class QuoteAdversity extends Component {
-    constructor(){
-        super();
 
-        this.state = {
+const QuoteAdversity = (props) => {
+    let {Quote, Author} = props
 
-        }
-    }
-
-    render (){
-        return(
-            <div></div>
-        )
-    }
+    return (
+        <div className="quoteAdversity">
+            <div><p>{Quote}</p></div>
+            <h5>{Author}</h5>
+        </div>
+    )
 }
 
-export default withProvider(QuoteAdversity)
+
+export default QuoteAdversity

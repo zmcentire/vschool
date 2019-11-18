@@ -1,20 +1,38 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Navbar, Nav, NavbarBrand, NavLink, UncontrolledDropdown, DropdownMenu, DropdownItem, DropdownToggle} from 'reactstrap'
 
-const NavBar = (props) => {
+const NavBar = () => {
+    
     return (
-        <div className = 'navbar'>
-           <Link to ="/">Home</Link>
-           <Link to ='/about'>About</Link>
-           <form>
-            <select name="jumpmenu" id="">
-               <option>Categories</option>
-               <option value="">On Adversity</option>
-               <option value="">On Mortality</option>
-               <option value="">On Mental Wellness</option>
-            </select>
-           </form>
-        </div>
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">Stoic Quote Generator</NavbarBrand>
+          <Nav className="ml-auto" navbar>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Quote Categories
+              </DropdownToggle>
+              <DropdownMenu right>
+                <NavLink href='/Adversity/'>
+                    <DropdownItem>
+                        On Adversity
+                    </DropdownItem>
+                </NavLink>
+                <NavLink href='/Mortality'>
+                    <DropdownItem>
+                        On Mortality
+                    </DropdownItem>
+                </NavLink>
+                <NavLink href='/Mental'>
+                    <DropdownItem>
+                        On Mental Wellness
+                    </DropdownItem>
+                </NavLink>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+      </Navbar>
+    </div>
     )
 }
 
