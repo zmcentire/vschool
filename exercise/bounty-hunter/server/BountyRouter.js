@@ -1,33 +1,47 @@
 const express = require('express')
-const uuid = require('uuid')
-const bounties = require('./bounties.json')
+const bounties = require('./models/Bounty')
 const bountyRouter = express.Router()
 
-bountyRouter.route("/bounty")
+bountyRouter.route("/")
     .get((req, res) => {
-        res.send(bounties)
+        bounties.find((err, bounties) => {
+            if(err) return res.status(500).send(err)
+            return res.status(200).send(bounties)
+        })
     })
     .post((req, res) => {
-        const newBounty = req.body
-        newBounty._id = uuid()
-        bounties.push(newBounty)
-        res.send(newBounty)
+        const newBounty = new Bounty(req.body)
+        newBounty.save((err, bounties) => {
+            if(err) return res.status(500).send(err)
+            return res.status(201).send(bounties)
+        })
     });
-bountyRouter.route('/bounty/:_id')
+bountyRouter.route('/:_id')
     .get((req, res) => {
-        res.send(req.params)
+        bounties.findById(req.params._id, (err, bounties) => {
+            if(err) return res.status(500).send(err)
+            return res.status(200).send(bounties)
+        })
     })
     .put((req, res) => {
-        let {_id} = req.params
-        let updatedBounty = req.body
-        bounties.forEach(bounty => bounty._id === _id && object.assign(bounty, updatedBounty))
-        res.send(updatedBounty)
+        bounties.findOneandUpdate(
+            {_id: req.params._id},
+            req.body,
+            {new: true},
+            (err, bounties) => {
+                if (err) return res.status(500).send(err)
+                return res.status(200).send(bounties)
+            }
+        )
     })
     .delete((req, res) => {
-        let {_id} = req.params
-        let index = bounties.findIndex(bounty => bounty._id === _id)
-        bounties.splice(index, 1)
-        res.send('successful')
+        Place.findOneAndDelete(
+            {_id: req.params._id},
+            (err, bounties) => {
+                if (err) return res.status(500).send(err)
+                return res.status(200).send(bounties)
+            }
+        )
 
     })
 

@@ -40,10 +40,10 @@ class Form extends Component {
             <form onSubmit={this.handleSubmit} className= {this.props.type === 'add' ? 'ugly-submit':'edit-ugly'}>
                 <input type="text" placeholder="First Name" name="firstName" value={this.state.firstName}/>
                 <input type="text" placeholder="Last Name" name="lastName" value={this.state.lastName}/>
-                Living:
-                <input type="radio" name="living" value="Yes">Yes</input>
-                <input type="radio" name="living" value="No">No</input>
-                Jedi or Sith?
+                Alive or Dead?:
+                <input type="radio" name="living" value="Alive"/>
+                <input type="radio" name="living" value="Dead"/>
+                Jedi or Sith?:
                 <input type="radio" name="type" value="Jedi"/>
                 <input type="radio" name="type" value="Sith"/>
                 <br/>
@@ -53,3 +53,5 @@ class Form extends Component {
         )
     }
 }
+
+export default withProvider(Form)

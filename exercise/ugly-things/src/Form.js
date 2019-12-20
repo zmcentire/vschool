@@ -30,7 +30,7 @@ class Form extends Component {
             this.props.addUgly(this.state)
         } else {
             this.props.editUgly(this.props.ugly._id, this.state)
-            this.props.toggle()
+            
         }
     }
 

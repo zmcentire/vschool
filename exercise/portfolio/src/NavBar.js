@@ -11,7 +11,7 @@ const NavBar = () => {
                         <NavLink>Resume</NavLink>
                     </NavItem>
                     <NavItem>
-                        <Link to="/Projects">Projects</Link>
+                        <NavLink href="/Projects">Projects</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href="https://github.com/zmcentire">Github</NavLink>
